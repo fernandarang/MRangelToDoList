@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TareasCell" rowHeight="72" id="KGk-i7-Jjw" customClass="tareasTableViewCell" customModule="MRangelToDoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-o7-WZF">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec" translatesAutoresizingMaskIntoConstraints="NO" id="beS-Pi-BwP">
+                                <rect key="frame" x="16" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oGF-xK-GCn"/>
+                                    <constraint firstAttribute="width" constant="50" id="wwn-Ud-4bc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tareas Tareas Tareas Tareas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-cX-rj9">
+                                <rect key="frame" x="85" y="13" width="240" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="ceD-u6-JRi"/>
+                                    <constraint firstAttribute="width" constant="240" id="r35-DK-qRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-jA-IfA">
+                                <rect key="frame" x="318" y="17" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.46392689450000002" green="0.92664712419999995" blue="0.65070010680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="372" id="76R-U2-2XX"/>
+                            <constraint firstAttribute="height" constant="72" id="BmM-qU-RxA"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmu-cX-rj9" secondAttribute="bottom" constant="12" id="JCs-mS-R2p"/>
+                            <constraint firstItem="beS-Pi-BwP" firstAttribute="top" secondItem="y5h-o7-WZF" secondAttribute="top" constant="10" id="MlH-nu-6RO"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmu-cX-rj9" secondAttribute="trailing" constant="47" id="XTS-gw-cBC"/>
+                            <constraint firstItem="Bmu-cX-rj9" firstAttribute="leading" secondItem="beS-Pi-BwP" secondAttribute="trailing" constant="19" id="bL1-zL-I7Y"/>
+                            <constraint firstAttribute="bottom" secondItem="beS-Pi-BwP" secondAttribute="bottom" constant="12" id="gWk-be-eq4"/>
+                            <constraint firstItem="beS-Pi-BwP" firstAttribute="leading" secondItem="y5h-o7-WZF" secondAttribute="leading" constant="16" id="jAE-Le-LCF"/>
+                            <constraint firstItem="Bmu-cX-rj9" firstAttribute="top" secondItem="y5h-o7-WZF" secondAttribute="top" constant="13" id="zFn-Tn-7m4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y5h-o7-WZF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2U8-ZP-34U"/>
+                    <constraint firstAttribute="trailing" secondItem="y5h-o7-WZF" secondAttribute="trailing" id="2WW-ao-CcA"/>
+                    <constraint firstItem="y5h-o7-WZF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UFF-Ku-4bX"/>
+                    <constraint firstAttribute="bottom" secondItem="y5h-o7-WZF" secondAttribute="bottom" id="em1-ye-gbG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ImageCategoria" destination="beS-Pi-BwP" id="2zo-nY-wOC"/>
+                <outlet property="NombreLbl" destination="Bmu-cX-rj9" id="I68-oW-m6p"/>
+                <outlet property="checkImage" destination="zhc-jA-IfA" id="qYt-80-zuO"/>
+            </connections>
+            <point key="canvasLocation" x="230.76923076923077" y="28.436018957345969"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="rec" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/macbookmba5/Library/Developer/CoreSimulator/Devices/99BF617F-07B0-490D-89C9-F9E2D51495DC/data/Containers/Data/Application/B50532F7-79BF-4D94-B394-2973377244CC/Documents.Document.MRangelToDoList.sql" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1078"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,9:mainCategoria"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE Categoria(
+IdCategoria INTEGER PRIMARY KEY AUTOINCREMENT,
+Nombre VARCHAR(200) NOT NULL
+)
+CREATE TABLE Tareas(
+IdTarea INTEGER PRIMARY KEY AUTOINCREMENT,
+Nombre VARCHAR(200) NOT NULL,
+IdCategoria INTEGER,
+FOREIGN KEY (IdCategoria) REFERENCES Categoria (IdCategoria) ON DELETE SET NULL
+)
+
+INSERT INTO  Categoria VALUES (1,'Trabajo')
+
+INSERT INTO  Categoria VALUES (2,'Hobbies')
+INSERT INTO  Categoria VALUES (3,'Comida')
+INSERT INTO  Categoria VALUES (4,'Estudio')
+INSERT INTO  Categoria VALUES (5,'Compras')
+INSERT INTO  Categoria VALUES (6,'Paseo')
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
